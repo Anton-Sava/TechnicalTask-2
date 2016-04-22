@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/events"
+        android:icon="@drawable/ic_all_events"
+        android:title="@string/all_events" />
+
+    <item
+        android:id="@+id/on_map"
+        android:icon="@drawable/ic_events_on_map"
+        android:title="@string/events_on_map" />
+
+    <item android:title="@string/enter_account" />
+
+</menu>

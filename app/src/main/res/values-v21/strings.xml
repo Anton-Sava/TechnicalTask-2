@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_account">Увійти в аккаунт</string>
+    <string name="all_events">Всі події</string>
+    <string name="events_on_map">Подї на мапі</string>
+    <string name="e_contact">e-contact</string>
+    <string name="app_close">Close</string>
+    <string name="app_open">Open</string>
+    <string name="app_name">FirstApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="sport">Спортивное мероприятие</string>
+    <string name="status">Проведение</string>
+    <string name="group">Груповой этап</string>
+    <string name="semiFinal">Полуфинал</string>
+    <string name="champ">Финал</string>
+    <string name="winner">Прошлогодний победитель</string>
+    <string name="groupDay">25 марта 2016</string>
+    <string name="semiFinalDay">26 марта 2016</string>
+    <string name="champDay">27 марта 2016</string>
+    <string name="winnerName">Yalantis</string>
+    <string name="description">Футбольный турнир между командами компаний в сфере IT технологий пройдет на футбольном поле СК ВОСХОД по адресу ул. Набережная Победы 51 в 19:00.</string>
+
+</resources>
