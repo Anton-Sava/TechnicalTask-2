@@ -15,4 +15,13 @@
 
     <style name="RecyclerItemStyle"></style>
 
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/base</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/icons</item>
+        <item name="android:windowBackground">@color/divider</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
 </resources>

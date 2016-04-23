@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/MatchParent"
     android:fitsSystemWindows="true">
 
     <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/MatchWrap"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MatchWrap"
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:title="@string/all_events" />
@@ -27,10 +25,10 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/WrapContent"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:src="@android:drawable/ic_input_add" />
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/f_a_b_2_x"
+        app:layout_behavior="ua.antonsava.secondapp.ScrollFabBehavior"  />
 
 </android.support.design.widget.CoordinatorLayout>

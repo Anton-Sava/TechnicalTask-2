@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -29,7 +28,7 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.mImageView = (ImageView) itemView.findViewById(R.id.image);
+            this.mImageView = (ImageView) itemView.findViewById(R.id.images);
         }
     }
 
@@ -40,18 +39,12 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
         return new ViewHolder(view);
     }
 
+
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         ImageView pictureList = holder.mImageView;
         int src = mPictureList.get(position);
         Picasso.with(mContext).load(src).into(pictureList);
-
-        ((ViewHolder) holder).mImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(mContext, v.getClass().getSimpleName(), Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     @Override
@@ -59,4 +52,3 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
         return mPictureList.size();
     }
 }
-

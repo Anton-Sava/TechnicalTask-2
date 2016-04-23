@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 
 import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -31,7 +32,7 @@ public class TabRecyclerAdapter extends RecyclerView.Adapter<TabRecyclerAdapter.
     }
 
 
-    public  class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageIcon;
         TextView textTitle;
@@ -39,22 +40,17 @@ public class TabRecyclerAdapter extends RecyclerView.Adapter<TabRecyclerAdapter.
         TextView textData;
         TextView textDays;
         ImageView imageLike;
-
-        @OnClick(R.id.item_layout)
-        public void onClickItem() {
-            Intent intent = new Intent(mContext, InformationActivity.class);
-            mContext.startActivity(intent);
-        }
-
+        LinearLayout linerLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
             this.imageIcon = (ImageView) itemView.findViewById(R.id.mark);
-            this.textTitle = (TextView) itemView.findViewById(R.id.title);
+            this.textTitle = (TextView) itemView.findViewById(R.id.titles);
             this.textAdress = (TextView) itemView.findViewById(R.id.adress);
             this.textData = (TextView) itemView.findViewById(R.id.data);
             this.textDays = (TextView) itemView.findViewById(R.id.days);
             this.imageLike = (ImageView) itemView.findViewById(R.id.like);
+            this.linerLayout = (LinearLayout) itemView.findViewById(R.id.item_layout);
         }
     }
 
@@ -76,10 +72,17 @@ public class TabRecyclerAdapter extends RecyclerView.Adapter<TabRecyclerAdapter.
         holder.textDays.setText(mTabRecyclerList.get(position).getmDays());
         holder.imageLike.setImageResource(mTabRecyclerList.get(position).getmLike());
 
+        holder.textTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              Intent i = new Intent(mContext, InformationActivity.class);
+                mContext.startActivity(i);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return mTabRecyclerList.size() ;
+        return mTabRecyclerList.size();
     }
 }

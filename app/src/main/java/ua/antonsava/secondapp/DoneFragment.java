@@ -46,35 +46,35 @@ public class DoneFragment extends Fragment {
     }
 
     private void reciveDataImage() {
-        TabRecycleViewData data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Савченко 22, м.Дніпропетровськ", "22 квітня 2016", "7 днів", R.drawable.ic_like);
+        TabRecycleViewData data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Савченко 22, м.Дніпропетровськ", "22 квітня 2016", "7 днів");
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Кедріна 47, м.Дніпропетровськ", "18 квітня 2016", "5 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Кедріна 47, м.Дніпропетровськ", "18 квітня 2016", "5 днів" );
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_social, "Соціальна подія"
-                , "вул.Карла Маркса 60, м.Дніпропетровськ", "15 квітня 2016", "3 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_social, R.drawable.ic_like, "Соціальна подія"
+                , "вул.Карла Маркса 60, м.Дніпропетровськ", "15 квітня 2016", "3 днів" );
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Глінкі 17, м.Дніпропетровськ", "17 квітня 2016", "12 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Глінкі 17, м.Дніпропетровськ", "17 квітня 2016", "12 днів" );
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Шевченка 94, м.Дніпропетровськ ", "13 квітня 2016", "7 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Шевченка 94, м.Дніпропетровськ ", "13 квітня 2016", "7 днів");
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_party, "Розважальна подія"
-                , "вул.Кірова 5, м.Дніпропетровськ ", "3 квітня 2016", "5 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_party,  R.drawable.ic_like, "Розважальна подія"
+                , "вул.Кірова 5, м.Дніпропетровськ ", "3 квітня 2016", "5 днів");
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_social, "Соціальна подія"
-                , "вул.Гагаріна 175, м.Дніпропетровськ ", "9 квітня 2016", "9 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_social, R.drawable.ic_like, "Соціальна подія"
+                , "вул.Гагаріна 175, м.Дніпропетровськ ", "9 квітня 2016", "9 днів");
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Тітова 1, м.Дніпропетровськ ", "9 квітня 2016", "5 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Тітова 1, м.Дніпропетровськ ", "9 квітня 2016", "5 днів" );
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_party, "Розважальна подія"
-                , "вул.Робоча 122, м.Дніпропетровськ ", "3 квітня 2016", "7 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_party, R.drawable.ic_like, "Розважальна подія"
+                , "вул.Робоча 122, м.Дніпропетровськ ", "3 квітня 2016", "7 днів" );
         mImageList.add(data);
-        data = new TabRecycleViewData(R.drawable.ic_sport, "Спортивна подія"
-                , "вул.Перемоги 145, м.Дніпропетровськ ", "20 квітня 2016", "9 днів", R.drawable.ic_like);
+        data = new TabRecycleViewData(R.drawable.ic_sport, R.drawable.ic_like, "Спортивна подія"
+                , "вул.Перемоги 145, м.Дніпропетровськ ", "20 квітня 2016", "9 днів");
         mImageList.add(data);
 
     }

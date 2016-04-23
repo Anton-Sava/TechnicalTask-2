@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/item_layout"
-    style="@style/MatchParent"
+    style="@style/MatchWrap"
     android:padding="16dp"
     android:clickable="true"
     android:focusable="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        style="@style/MatchParent"
+        style="@style/MatchWrap"
         android:background="@drawable/drawable_recycler_item"
         android:clickable="true"
         android:orientation="horizontal">
@@ -43,7 +43,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/titles"
                 style="@style/WrapContent"
                 android:paddingLeft="@dimen/header_padding_left"
                 android:paddingTop="@dimen/item_padding_top"

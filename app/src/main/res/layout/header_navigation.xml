@@ -15,6 +15,8 @@
         android:paddingBottom="@dimen/header_padding_bottom"
         android:text="@string/e_contact"
         android:textSize="@dimen/header_navigation_size"
-        android:textColor="@color/icons"/>
+        android:textColor="@color/icons"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"/>
 
 </LinearLayout>

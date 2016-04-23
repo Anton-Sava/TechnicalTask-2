@@ -11,6 +11,6 @@
         style="@style/WrapContent"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:src="@drawable/f_a_b_2_x" />
 
 </android.support.design.widget.CoordinatorLayout>

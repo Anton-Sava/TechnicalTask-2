@@ -12,5 +12,6 @@
     <color name="linia">#EEE9E9</color>
     <color name="status_background">#ff8c00</color>
     <color name="left_back_color_text">#696969</color>
+    <color name="base">#4a708b</color>
 
 </resources>

@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/info_padding_top">
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/images"
         android:layout_width="@dimen/info_image_width"
         android:layout_height="@dimen/info_image_height" />
 

@@ -8,21 +8,23 @@ import android.support.v7.widget.RecyclerView;
 public class TabRecycleViewData {
 
     int mMark;
+    int mLike;
     String mTitle;
     String mAdress;
     String mData;
     String mDays;
-    int mLike;
 
-    public TabRecycleViewData(int mMark, String mTitle,
-                              String mAdress, String mData, String mDays, int mLike) {
+
+    public TabRecycleViewData(int mMark, int mLike, String mTitle,
+                              String mAdress, String mData, String mDays) {
 
         this.mMark = mMark;
+        this.mLike = mLike;
         this.mTitle = mTitle;
         this.mAdress = mAdress;
         this.mData = mData;
         this.mDays = mDays;
-        this.mLike = mLike;
+
 
     }
 
