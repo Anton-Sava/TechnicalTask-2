@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchParent"
-    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/information_main">
 
     <include layout="@layout/information_toolbar" />
