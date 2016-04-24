@@ -28,17 +28,15 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.mImageView = (ImageView) itemView.findViewById(R.id.images);
+            this.mImageView = (ImageView) itemView.findViewById(R.id.cartoon);
         }
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.information_recycler_image, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.information_recycler_cartoon, parent, false);
         return new ViewHolder(view);
     }
-
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {

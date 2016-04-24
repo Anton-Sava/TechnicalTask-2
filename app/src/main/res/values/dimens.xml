@@ -16,4 +16,8 @@
     <dimen name="info_image_height">200dp</dimen>
     <dimen name="item_padding_top">16dp</dimen>
     <dimen name="recycler_item_bottom">8dp</dimen>
+    <dimen name="small_size">12sp</dimen>
+    <dimen name="margin_bottom_sport">10dp</dimen>
+    <dimen name="margin_bottom_status">13dp</dimen>
+    <dimen name="text_size_descriptiontext">15sp</dimen>
 </resources>

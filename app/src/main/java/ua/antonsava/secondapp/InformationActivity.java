@@ -34,6 +34,7 @@ public class InformationActivity extends AppCompatActivity {
     private InformationAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,7 @@ public class InformationActivity extends AppCompatActivity {
 
         mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mRecyclerView.setLayoutManager(mLayoutManager);
+
 
         reciveDataImage();
         mAdapter = new InformationAdapter(InformationActivity.this, mImageList);
@@ -69,7 +71,7 @@ public class InformationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(InformationActivity.this, v.getClass().getSimpleName(), Toast.LENGTH_SHORT)
                         .show();
-                }
+            }
         };
 
         mTextSport.setOnClickListener(onClickListener);

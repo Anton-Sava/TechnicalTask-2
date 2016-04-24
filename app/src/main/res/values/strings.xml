@@ -18,5 +18,7 @@
     <string name="champDay">27 березня 2016</string>
     <string name="winnerName">Yalantis</string>
     <string name="description">Футбольний турнір між командами компаній у сфері IT технологій відбудеться на футбольному полі СК ВОСХОД за адресою вул. Набережна Перемоги 51 о 19:00.</string>
+    <string name="navigation_down_text">Зроблено з любов\'ю \n<a href="IT Ruh Dnipro">IT Ruh Dnipro</a> та
+        <a href="Yalantis">Yalantis</a></string>
 
 </resources>

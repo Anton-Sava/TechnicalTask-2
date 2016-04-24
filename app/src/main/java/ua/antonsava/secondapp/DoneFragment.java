@@ -1,6 +1,5 @@
 package ua.antonsava.secondapp;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,7 +19,6 @@ import java.util.List;
 public class DoneFragment extends Fragment {
 
     private List<TabRecycleViewData> mImageList = new ArrayList<>();
-    private Context mContext;
 
     public DoneFragment() {
     }
@@ -39,8 +37,6 @@ public class DoneFragment extends Fragment {
         TabRecyclerAdapter mAdapter = new TabRecyclerAdapter( getActivity(), mImageList);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-
-
 
         return rootView;
     }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchParent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_behavior="@string/bottom_sheet_behavior"
     tools:showIn="@layout/information_main">
 
     <include layout="@layout/information_toolbar" />
@@ -23,7 +23,7 @@
             <TextView
                 android:id="@+id/sport"
                 style="@style/WrapContent"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/margin_bottom_sport"
                 android:clickable="true"
                 android:text="@string/sport"
                 android:textColor="#000000"
@@ -33,7 +33,7 @@
                 android:id="@+id/status"
                 style="@style/WrapContent"
                 android:layout_below="@+id/sport"
-                android:layout_marginBottom="13dp"
+                android:layout_marginBottom="@dimen/margin_bottom_status"
                 android:background="@drawable/status_text_background"
                 android:clickable="true"
                 android:text="@string/status"
@@ -116,7 +116,7 @@
                 android:clickable="true"
                 android:text="@string/description"
                 android:textColor="#000000"
-                android:textSize="15sp" />
+                android:textSize="@dimen/text_size_descriptiontext" />
 
             <LinearLayout
                 style="@style/MatchParent"

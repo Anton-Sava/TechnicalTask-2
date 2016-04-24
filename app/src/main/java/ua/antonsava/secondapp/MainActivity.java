@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mainn);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mNavigationView = (NavigationView) findViewById(R.id.navigation);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer_layout);
+        mNavigationView = (NavigationView) findViewById(R.id.navigator);
 
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
                 mToolbar, R.string.app_open, R.string.app_close);
@@ -74,16 +74,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
+        int mId = item.getItemId();
 
-        if (id == R.id.action_settings) {
+        if (mId == R.id.action_settings) {
             return true;
         }
         return super.onOptionsItemSelected(item);

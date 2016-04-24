@@ -22,23 +22,12 @@ public class TabFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        /**
-         *Inflate tab_layout and setup Views.
-         */
+
         View maket = inflater.inflate(R.layout.tab_layout, null);
         sTabLayout = (TabLayout) maket.findViewById(R.id.tabs);
         sViewPager = (ViewPager) maket.findViewById(R.id.view_pager);
 
-        /**
-         *Set an Apater for the View Pager
-         */
         sViewPager.setAdapter(new Adapter(getChildFragmentManager()));
-
-        /**
-         * Now , this is a workaround ,
-         * The setupWithViewPager dose't works without the runnable .
-         * Maybe a Support Library Bug .
-         */
 
         sTabLayout.post(new Runnable() {
             @Override
@@ -53,10 +42,6 @@ public class TabFragment extends Fragment {
         public Adapter(FragmentManager fm) {
             super(fm);
         }
-
-        /**
-         * Return fragment with respect to Position .
-         */
 
         @Override
         public Fragment getItem(int position) {
@@ -75,10 +60,6 @@ public class TabFragment extends Fragment {
         public int getCount() {
             return sIntItems;
         }
-
-        /**
-         * This method returns the title of the tab according to the position.
-         */
 
         @Override
         public CharSequence getPageTitle(int position) {

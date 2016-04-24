@@ -7,13 +7,13 @@ import android.support.v7.widget.RecyclerView;
  */
 public class TabRecycleViewData {
 
-    int mMark;
-    int mLike;
-    String mTitle;
-    String mAdress;
-    String mData;
-    String mDays;
-
+    public static String mId;
+    public int mMark;
+    public int mLike;
+    public String mTitle;
+    public String mAdress;
+    public String mData;
+    public String mDays;
 
     public TabRecycleViewData(int mMark, int mLike, String mTitle,
                               String mAdress, String mData, String mDays) {
@@ -24,7 +24,6 @@ public class TabRecycleViewData {
         this.mAdress = mAdress;
         this.mData = mData;
         this.mDays = mDays;
-
 
     }
 
@@ -79,5 +78,13 @@ public class TabRecycleViewData {
 
     public void setmDays(String mDays) {
         this.mDays = mDays;
+    }
+
+    public static String getId() {
+        return mId;
+    }
+
+    public void setId(String id) {
+        mId = id;
     }
 }

@@ -1,14 +1,11 @@
 package ua.antonsava.secondapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -19,8 +16,7 @@ import java.util.List;
  */
 public class WaitFragment extends Fragment {
 
-    List<TabRecycleViewData> mImageList;
-    TabListAdapter tabListAdapter;
+    TabListAdapter mTabListAdapter;
 
     public WaitFragment() {
 
@@ -40,16 +36,8 @@ public class WaitFragment extends Fragment {
         ListView mListView = (ListView) view.findViewById(R.id.list_view_tab);
 
         ArrayList data = receiveDataImage();
-        tabListAdapter = new TabListAdapter(getActivity(), data);
-        mListView.setAdapter(tabListAdapter);
-
-//        mListView.setOnClickListener(new AdapterView.OnItemClickListener(){
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(getActivity(),InformationActivity.class);
-//                startActivity(intent);}
-//        });
-
+        mTabListAdapter = new TabListAdapter(getActivity(), data);
+        mListView.setAdapter(mTabListAdapter);
 
         return view;
     }

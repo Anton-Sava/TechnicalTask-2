@@ -6,6 +6,4 @@
         android:endColor="@color/colorPrimary"
         android:startColor="@color/sea"
         android:type="linear"/>
-
-
 </shape>

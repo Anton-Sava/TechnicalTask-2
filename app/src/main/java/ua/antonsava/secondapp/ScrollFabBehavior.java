@@ -13,6 +13,7 @@ public class ScrollFabBehavior extends FloatingActionButton.Behavior {
     private static boolean sScrollReaction = true;
 
     public ScrollFabBehavior(Context context, AttributeSet attrs) {
+
     }
 
     public boolean onStartNestedScroll(CoordinatorLayout coordinatorLayout

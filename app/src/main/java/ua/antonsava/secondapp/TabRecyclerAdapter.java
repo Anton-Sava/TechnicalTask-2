@@ -9,14 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import java.util.List;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * Created by Apple on 20.04.2016.
@@ -34,23 +30,23 @@ public class TabRecyclerAdapter extends RecyclerView.Adapter<TabRecyclerAdapter.
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView imageIcon;
-        TextView textTitle;
-        TextView textAdress;
-        TextView textData;
-        TextView textDays;
-        ImageView imageLike;
-        LinearLayout linerLayout;
+        ImageView mImageIcon;
+        TextView mTextTitle;
+        TextView mTextAdress;
+        TextView mTextData;
+        TextView mTextDays;
+        ImageView mImageLike;
+        LinearLayout mLinerLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            this.imageIcon = (ImageView) itemView.findViewById(R.id.mark);
-            this.textTitle = (TextView) itemView.findViewById(R.id.titles);
-            this.textAdress = (TextView) itemView.findViewById(R.id.adress);
-            this.textData = (TextView) itemView.findViewById(R.id.data);
-            this.textDays = (TextView) itemView.findViewById(R.id.days);
-            this.imageLike = (ImageView) itemView.findViewById(R.id.like);
-            this.linerLayout = (LinearLayout) itemView.findViewById(R.id.item_layout);
+            this.mImageIcon = (ImageView) itemView.findViewById(R.id.mark);
+            this.mTextTitle = (TextView) itemView.findViewById(R.id.titles);
+            this.mTextAdress = (TextView) itemView.findViewById(R.id.adress);
+            this.mTextData = (TextView) itemView.findViewById(R.id.data);
+            this.mTextDays = (TextView) itemView.findViewById(R.id.days);
+            this.mImageLike = (ImageView) itemView.findViewById(R.id.like);
+            this.mLinerLayout = (LinearLayout) itemView.findViewById(R.id.item_layout);
         }
     }
 
@@ -65,17 +61,20 @@ public class TabRecyclerAdapter extends RecyclerView.Adapter<TabRecyclerAdapter.
 
     @Override
     public void onBindViewHolder(TabRecyclerAdapter.ViewHolder holder, int position) {
-        holder.imageIcon.setImageResource(mTabRecyclerList.get(position).getmMark());
-        holder.textTitle.setText(mTabRecyclerList.get(position).getmTitle());
-        holder.textAdress.setText(mTabRecyclerList.get(position).getmAdress());
-        holder.textData.setText(mTabRecyclerList.get(position).getmData());
-        holder.textDays.setText(mTabRecyclerList.get(position).getmDays());
-        holder.imageLike.setImageResource(mTabRecyclerList.get(position).getmLike());
+        final TabRecycleViewData viewData = mTabRecyclerList.get(position);
 
-        holder.textTitle.setOnClickListener(new View.OnClickListener() {
+        holder.mImageIcon.setImageResource(mTabRecyclerList.get(position).getmMark());
+        holder.mTextTitle.setText(mTabRecyclerList.get(position).getmTitle());
+        holder.mTextAdress.setText(mTabRecyclerList.get(position).getmAdress());
+        holder.mTextData.setText(mTabRecyclerList.get(position).getmData());
+        holder.mTextDays.setText(mTabRecyclerList.get(position).getmDays());
+        holder.mImageLike.setImageResource(mTabRecyclerList.get(position).getmLike());
+
+        holder.mLinerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent i = new Intent(mContext, InformationActivity.class);
+                Intent i = new Intent(mContext, InformationActivity.class);
+                i.putExtra("viewData", viewData.getId());
                 mContext.startActivity(i);
             }
         });
